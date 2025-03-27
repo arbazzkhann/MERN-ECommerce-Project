@@ -8,13 +8,13 @@ const HomeSectionCarousel = () => {
   const responsive = {
     0: { items: 1 },
     720: { items: 3 },
-    1024: { items: 5.5 },
+    1024: { items: 5.3 },
   };
 
   const items = [1, 1, 1, 1, 1, 12].map((item) => <HomeSectionCard />);
 
   return (
-    <div className="px-4 lg:px-8 border border-black">
+    <div className="px-4 lg:px-8 border">
       <div className="relative p-5 ">
         <AliceCarousel
           items={items}
@@ -46,7 +46,7 @@ const HomeSectionCarousel = () => {
             position: "absolute",
             top: "8rem",
             left: "0rem",
-            transform: "translateX(50%) rotate(90deg)",
+            transform: "translateX(-50%) rotate(90deg)",
             bgcolor: "white",
           }}
           aria-label="next"

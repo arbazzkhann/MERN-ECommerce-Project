@@ -3,6 +3,7 @@ import AliceCarousel from "react-alice-carousel";
 import HomeSectionCard from "../HomeSectionCards/HomeSectionCard";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import { Button } from "@mui/material";
+import nikeShoes from '../../../Data/Nike/NikeShoes'
 
 const HomeSectionCarousel = () => {
   const [activeIndex, setActiveIndex] = useState(0); //Active Index
@@ -18,7 +19,7 @@ const HomeSectionCarousel = () => {
 
   const syncActiveIndex = ({ item }) => setActiveIndex(item);
 
-  const items = [1, 1, 1, 1, 1, 12].map((item) => <HomeSectionCard />);
+  const items = nikeShoes.map((item) => <HomeSectionCard product={item}/>);
 
   return (
     <div className="px-4 lg:px-8 border">

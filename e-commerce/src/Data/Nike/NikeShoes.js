@@ -1,4 +1,4 @@
-[
+export default  [
   {
     imageUrl: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/u_126ab356-44d8-4a06-89b4-fcdcc8df0245/d1bfe34b-0913-46fc-9a0f-6242736c02e6/air-jordan-4-rm.png",
     brand: "Nike",
